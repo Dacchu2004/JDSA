@@ -1,6 +1,6 @@
-package DSA;
+package DSA.LinearSearch;
 
-public class linearSearch {
+public class LinearSearch {
     public static void main(String[] args) {
         int[] nums = {2,-345,74,83,29,5,19,26,487,546};
         int target=83;
