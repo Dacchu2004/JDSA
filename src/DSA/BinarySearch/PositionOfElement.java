@@ -10,7 +10,7 @@ package DSA.BinarySearch;
 public class PositionOfElement {
     public static void main(String[] args) {
         int[] arr = { 0, 2, 3, 4, 15, 16, 18, 22, 45, 89,100,120,130,140,156,178,256,278,300};
-        int target = 140;//when the target goes beyond the 13th index then it may cause error here bcoz we are using an finite array if  we provide the infinite array then it works perffectly
+        int target = 140;//when the target goes beyond the 13th index then it may cause error here bcoz we are using an finite array if  we provide the infinite array then it works perfectly
         System.out.println(findRange(arr,target));
     }
 
