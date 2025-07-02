@@ -4,7 +4,7 @@ package DSA.BinarySearch;
 public class SmallestLetter {
     public static void main(String[] args) {
         char[] letters = { 'c' , 'e', 'j', 'k' };
-        char target='z';
+        char target='g';
 
         System.out.println(nextGreatLetter(letters,target));
     }

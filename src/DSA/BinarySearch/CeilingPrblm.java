@@ -1,5 +1,6 @@
 package DSA.BinarySearch;
 
+//finding the smallest num in the arr i.e, greater than or equal to target
 public class CeilingPrblm {
     public static void main(String[] args) {
         int[] nums={1,3,5,9,14,16,18};
@@ -28,6 +29,6 @@ public class CeilingPrblm {
                 start=mid+1;
             }
         }
-        return arr[end];
+        return arr[start];
     }
 }

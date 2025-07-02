@@ -1,5 +1,6 @@
 package DSA.BinarySearch;
 
+//finding the gratest num in the arr i.e, smaller than or equal to target
 public class FloorPrblm{
     public static void main(String[] args) {
         int[] nums={1,3,5,9,14,16,18};
@@ -28,6 +29,6 @@ public class FloorPrblm{
                 start=mid+1;
             }
         }
-        return arr[start];
+        return arr[end];
     }
 }
