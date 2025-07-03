@@ -15,7 +15,7 @@ public class RichPrblm {
         for (int per = 0; per < arr.length; per++) {
             int sum =0;
             for (int acc = 0; acc < arr[per].length; acc++) {
-                sum += arr[per][acc];
+                sum += arr[per][acc];//sum = sum+arr[per][acc];
             }
 
             if(sum>res){

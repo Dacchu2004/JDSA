@@ -38,7 +38,7 @@ public class EvenDigs {
 
     static int digits(int num){
         if(num<0){
-            num=num*-1;
+            num=num * -1;//if the num is negative, it converts that to positive
         }
         if(num==0){
             return 1;
