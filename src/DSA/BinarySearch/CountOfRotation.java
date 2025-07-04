@@ -6,8 +6,18 @@ public class CountOfRotation {
         int[] arr ={0,9,2,2,2};
         int pivot =findPivot(arr);
         int count=pivot+1;
+        if(pivot==-1){
+            count=0;
+        }
         System.out.println(count);
+
+//        System.out.println(countRotation(arr));
     }
+
+//    static int countRotation(int[] arr){
+//        int pivot = findPivot(arr);
+//        return pivot+1;
+//    }
 
     static int findPivot(int[] arr){
         int start=0;
