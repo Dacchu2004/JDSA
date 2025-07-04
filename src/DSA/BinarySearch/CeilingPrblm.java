@@ -1,5 +1,5 @@
 package DSA.BinarySearch;
-
+/// 35. search insert position
 //finding the smallest num in the arr i.e, greater than or equal to target
 public class CeilingPrblm {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class CeilingPrblm {
         int start= 0;
         int end= arr.length-1;
 
-        if(target>arr[arr.length-1]){
+        if(target>arr[end]){
             return -1;
         }
 
