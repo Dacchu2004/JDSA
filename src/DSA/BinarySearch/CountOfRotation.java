@@ -13,7 +13,7 @@ public class CountOfRotation {
         int count=0;
         int pivot =findPivot(arr,0,arr.length-1);
 
-        count=start+pivot+1;
+        count=pivot+1;
         return count;
     }
 
