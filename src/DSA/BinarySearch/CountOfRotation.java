@@ -4,20 +4,15 @@ public class CountOfRotation {
     public static void main(String[] args) {
 
         int[] arr ={0,9,2,2,2};
-        System.out.println(countRotation(arr));
+        int pivot =findPivot(arr);
+        int count=pivot+1;
+        System.out.println(count);
     }
 
-    static int countRotation(int[] arr){
+    static int findPivot(int[] arr){
         int start=0;
         int end=arr.length-1;
-        int count=0;
-        int pivot =findPivot(arr,0,arr.length-1);
 
-        count=pivot+1;
-        return count;
-    }
-
-    static int findPivot(int[] arr,int start,int end){
         while(start<=end){
             int mid=start+(end-start)/2;
 
