@@ -1,7 +1,6 @@
 package DSA.BinarySearch;
 
 /// rotated array without duplicate values
-/// way 1
 public class RotatedArr {
     public static void main(String[] args) {
         int[] arr ={4,5,6,7,8,1,2};
