@@ -23,7 +23,9 @@ public class BubbleSort {
                     swapped = true;
                 }
             }
-            break;
+            if(!swapped) {
+                break;
+            }
         }
     }
 }
