@@ -15,7 +15,7 @@ public class SelectionSort {
             int last=arr.length-i-1;
             int arrMaxIndex=maxIndex(arr,0,last);
 
-            //swapping
+            //swapping1
             swap(arr,arrMaxIndex,last);
         }
     }
