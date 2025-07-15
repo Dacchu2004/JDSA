@@ -43,4 +43,3 @@ public class SplitArray {
             return end; // here start == end
         }
     }
-}
