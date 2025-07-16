@@ -1,8 +1,7 @@
 package DSA.Sorting;
-//268, amazon quesion
-public class MissingNum {
-}
-class MissingNumber{
+//268, amazon question using cyclic sort
+
+class MissingNum{
     public int missingnum(int[] arr) {
         int i = 0;
         while (i < arr.length) {
