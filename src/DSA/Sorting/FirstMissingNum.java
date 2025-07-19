@@ -1,6 +1,6 @@
 package DSA.Sorting;
 
-// 41 hard asked in amazon
+// 41 hard asked in amazon use cyclic sort
 //we have to find the smallest positive missing element
 //so we should ignore the negatives
 //start checking from 1
