@@ -1,4 +1,4 @@
-package DSA;
+package DSA.MathsForDSA;
 
 public class NewtonSqrt {
     public static void main(String[] args) {
