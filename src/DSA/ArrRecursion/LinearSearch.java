@@ -11,6 +11,12 @@ public class LinearSearch {
         System.out.println(findIndexLast(arr,target,arr.length-1));
         findAllIndex(arr,target,0);
         System.out.println(list);
+        System.out.println(findAllIndex1(arr,target,0,new ArrayList<>()));
+        //or
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> ans = findAllIndex1(arr,target,0,list);
+        System.out.println(ans);
+        System.out.println(list);
 
     }
     static boolean find(int[] arr, int target, int index){
@@ -53,14 +59,14 @@ public class LinearSearch {
         findAllIndex(arr,target,index+1);
     }
 
-//    // by append in the list inside the function
-//    static ArrayList<Integer> findAllIndex1(int[] arr, int target, int index, ArrayList<Integer> list){
-//        if(index==arr.length){
-//            return list;
-//        }
-//        if(arr[index]==target){
-//            list.add(index);
-//        }
-//        findAllIndex(arr,target,index+1);
-//    }
+    // by append in the list inside the function
+    static ArrayList<Integer> findAllIndex1(int[] arr, int target, int index, ArrayList<Integer> list){
+        if(index==arr.length){
+            return list;
+        }
+        if(arr[index]==target){
+            list.add(index);
+        }
+        return findAllIndex1(arr,target,index+1,list);
+    }
 }
