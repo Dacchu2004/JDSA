@@ -17,6 +17,7 @@ public class LinearSearch {
         ArrayList<Integer> ans = findAllIndex1(arr,target,0,list);
         System.out.println(ans);
         System.out.println(list);
+        System.out.println(findAllIndex2(arr,target,0));
 
     }
     static boolean find(int[] arr, int target, int index){
@@ -59,7 +60,7 @@ public class LinearSearch {
         findAllIndex(arr,target,index+1);
     }
 
-    // by append in the list inside the function
+    // passing the list as an argument & by appending the list inside the function
     static ArrayList<Integer> findAllIndex1(int[] arr, int target, int index, ArrayList<Integer> list){
         if(index==arr.length){
             return list;
@@ -68,5 +69,20 @@ public class LinearSearch {
             list.add(index);
         }
         return findAllIndex1(arr,target,index+1,list);
+    }
+
+    //not passing list as an argument but don't use this approach not recommended
+    static ArrayList<Integer> findAllIndex2(int[] arr, int target, int index){
+        ArrayList<Integer> list  = new ArrayList<>();
+
+        if(index==arr.length){
+            return list;
+        }
+        if(arr[index]==target){
+            list.add(index);
+        }
+        ArrayList<Integer> ansFromBelowCalls = findAllIndex2(arr,target,index+1);
+        list.addAll(ansFromBelowCalls);
+        return list;
     }
 }
