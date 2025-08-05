@@ -3,8 +3,10 @@ package DSA.StringRecursion;
 public class SkipChar {
     public static void main(String[] args) {
         skip("","never ever give up");
+        System.out.println(skip1("never ever give up"));
     }
 
+    //passing string as an argument
     static void skip(String p, String up){ //p means processed up means unprocessed
         if(up.isEmpty()){
             System.out.println(p);
@@ -17,6 +19,20 @@ public class SkipChar {
             skip(p,up.substring(1));
         }else{
             skip(p+ch,up.substring(1));
+        }
+    }
+
+    //passing string in the function body
+    static String skip1(String up){
+        if(up.isEmpty()){
+            return "";
+        }
+        char ch = up.charAt(0);
+
+        if(ch=='e') {
+            return skip1(up.substring(1));
+        }else{
+            return ch + skip1(up.substring(1)); // ch will be the current answer
         }
     }
 }
