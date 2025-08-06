@@ -2,7 +2,7 @@ package DSA.StringRecursion;
 
 public class SkipString2 {
     public static void main(String[] args) {
-
+        System.out.println(skipAppNotApple("bcappapplesd"));
     }
     static String skipAppNotApple(String up){
         if(up.isEmpty()){
