@@ -8,7 +8,7 @@ public class Subset {
         return generateSubsets(new ArrayList<>(), nums, 0);
     }
 
-    private static List<List<Integer>> generateSubsets(List<Integer> current, int[] nums, int index) {
+    static List<List<Integer>> generateSubsets(List<Integer> current, int[] nums, int index) {
         if (index == nums.length) {
             List<List<Integer>> result = new ArrayList<>();
             result.add(new ArrayList<>(current)); // Add a copy
