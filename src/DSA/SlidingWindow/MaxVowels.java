@@ -2,6 +2,7 @@ package DSA.SlidingWindow;
 
 import java.util.Set;
 
+//using sets
 public class MaxVowels {
     public static void main(String[] args) {
         String s = "abciiidef";
@@ -32,4 +33,31 @@ public class MaxVowels {
         }
         return max;
     }
+    //not using sets
+    public int maxVowels1(String s, int k) {
+        int count = 0;
+        String vowels = "aeiou";
+
+        // First window
+        for (int i = 0; i < k; i++) {
+            if (vowels.indexOf(Character.toLowerCase(s.charAt(i))) >= 0) {
+                count++;
+            }
+        }
+        int max = count;
+
+        // Slide the window
+        for (int j = k; j < s.length(); j++) {
+            if (vowels.indexOf(Character.toLowerCase(s.charAt(j))) >= 0) {
+                count++;
+            }
+            if (vowels.indexOf(Character.toLowerCase(s.charAt(j - k))) >= 0) {
+                count--;
+            }
+            max = Math.max(max, count);
+            if (max == k) return max;
+        }
+        return max;
+    }
+
 }
